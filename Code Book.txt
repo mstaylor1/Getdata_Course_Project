@@ -1,0 +1,118 @@
+CODE BOOK for "Run_analysis.R" 
+
+The raw data for the "tidy data set" was obtained at this link
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+Summary statistics presented in the "features.txt" file at the above link were processed as follows:
+
+Only the mean and standard deviation statistics were processed.  All summary statistics were themselves averaged across unique activity-subject combinations.  Note that no effort to reproduce the data from the raw inertial data was attempted.  
+
+More information about the variables used in this analysis can be found in the "features_info.txt" file at the website linked to above.
+
+VARIABLES
+
+The raw data for this data set was collected from 30 people.  The "subject" variable identifies each test subject with a number from 1 to 30.  
+
+The raw data was collected while participants engaged in six distinct activites:
+
+	WALKING
+	WALKING_UPSTAIRS
+	WALKING_DOWNSTAIRS
+        SITTING
+	STANDING
+        LAYING
+
+The "activity" column of the tidy data set identifies which activity the subject was performing.
+  
+86 observation variables included in this data set are:
+		
+tBodyAcc-mean-X_avg_over_subject-activity
+tBodyAcc-mean-Y_avg_over_subject-activity
+tBodyAcc-mean-Z_avg_over_subject-activity
+tBodyAcc-std-X_avg_over_subject-activity
+tBodyAcc-std-Y_avg_over_subject-activity
+tBodyAcc-std-Z_avg_over_subject-activity
+tGravityAcc-mean-X_avg_over_subject-activity
+tGravityAcc-mean-Y_avg_over_subject-activity
+tGravityAcc-mean-Z_avg_over_subject-activity
+tGravityAcc-std-X_avg_over_subject-activity
+tGravityAcc-std-Y_avg_over_subject-activity
+tGravityAcc-std-Z_avg_over_subject-activity
+tBodyAccJerk-mean-X_avg_over_subject-activity
+tBodyAccJerk-mean-Y_avg_over_subject-activity
+tBodyAccJerk-mean-Z_avg_over_subject-activity
+tBodyAccJerk-std-X_avg_over_subject-activity
+tBodyAccJerk-std-Y_avg_over_subject-activity
+tBodyAccJerk-std-Z_avg_over_subject-activity
+tBodyGyro-mean-X_avg_over_subject-activity
+tBodyGyro-mean-Y_avg_over_subject-activity
+tBodyGyro-mean-Z_avg_over_subject-activity
+tBodyGyro-std-X_avg_over_subject-activity
+tBodyGyro-std-Y_avg_over_subject-activity
+tBodyGyro-std-Z_avg_over_subject-activity
+tBodyGyroJerk-mean-X_avg_over_subject-activity
+tBodyGyroJerk-mean-Y_avg_over_subject-activity
+tBodyGyroJerk-mean-Z_avg_over_subject-activity
+tBodyGyroJerk-std-X_avg_over_subject-activity
+tBodyGyroJerk-std-Y_avg_over_subject-activity
+tBodyGyroJerk-std-Z_avg_over_subject-activity
+tBodyAccMag-mean_avg_over_subject-activity
+tBodyAccMag-std_avg_over_subject-activity
+tGravityAccMag-mean_avg_over_subject-activity
+tGravityAccMag-std_avg_over_subject-activity
+tBodyAccJerkMag-mean_avg_over_subject-activity
+tBodyAccJerkMag-std_avg_over_subject-activity
+tBodyGyroMag-mean_avg_over_subject-activity
+tBodyGyroMag-std_avg_over_subject-activity
+tBodyGyroJerkMag-mean_avg_over_subject-activity
+tBodyGyroJerkMag-std_avg_over_subject-activity
+fBodyAcc-mean-X_avg_over_subject-activity
+fBodyAcc-mean-Y_avg_over_subject-activity
+fBodyAcc-mean-Z_avg_over_subject-activity
+fBodyAcc-std-X_avg_over_subject-activity
+fBodyAcc-std-Y_avg_over_subject-activity
+fBodyAcc-std-Z_avg_over_subject-activity
+fBodyAcc-meanFreq-X_avg_over_subject-activity
+fBodyAcc-meanFreq-Y_avg_over_subject-activity
+fBodyAcc-meanFreq-Z_avg_over_subject-activity
+fBodyAccJerk-mean-X_avg_over_subject-activity
+fBodyAccJerk-mean-Y_avg_over_subject-activity
+fBodyAccJerk-mean-Z_avg_over_subject-activity
+fBodyAccJerk-std-X_avg_over_subject-activity
+fBodyAccJerk-std-Y_avg_over_subject-activity
+fBodyAccJerk-std-Z_avg_over_subject-activity
+fBodyAccJerk-meanFreq-X_avg_over_subject-activity
+fBodyAccJerk-meanFreq-Y_avg_over_subject-activity
+fBodyAccJerk-meanFreq-Z_avg_over_subject-activity
+fBodyGyro-mean-X_avg_over_subject-activity
+fBodyGyro-mean-Y_avg_over_subject-activity
+fBodyGyro-mean-Z_avg_over_subject-activity
+fBodyGyro-std-X_avg_over_subject-activity
+fBodyGyro-std-Y_avg_over_subject-activity
+fBodyGyro-std-Z_avg_over_subject-activity
+fBodyGyro-meanFreq-X_avg_over_subject-activity
+fBodyGyro-meanFreq-Y_avg_over_subject-activity
+fBodyGyro-meanFreq-Z_avg_over_subject-activity
+fBodyAccMag-mean_avg_over_subject-activity
+fBodyAccMag-std_avg_over_subject-activity
+fBodyAccMag-meanFreq_avg_over_subject-activity
+fBodyBodyAccJerkMag-mean_avg_over_subject-activity
+fBodyBodyAccJerkMag-std_avg_over_subject-activity
+fBodyBodyAccJerkMag-meanFreq_avg_over_subject-activity
+fBodyBodyGyroMag-mean_avg_over_subject-activity
+fBodyBodyGyroMag-std_avg_over_subject-activity
+fBodyBodyGyroMag-meanFreq_avg_over_subject-activity
+fBodyBodyGyroJerkMag-mean_avg_over_subject-activity
+fBodyBodyGyroJerkMag-std_avg_over_subject-activity
+fBodyBodyGyroJerkMag-meanFreq_avg_over_subject-activity
+angle(tBodyAccMean,gravity)_avg_over_subject-activity
+angle(tBodyAccJerkMean),gravityMean)_avg_over_subject-activity
+angle(tBodyGyroMean,gravityMean)_avg_over_subject-activity
+angle(tBodyGyroJerkMean,gravityMean)_avg_over_subject-activity
+angle(X,gravityMean)_avg_over_subject-activity
+angle(Y,gravityMean)_avg_over_subject-activity
+angle(Z,gravityMean)_avg_over_subject-activity
+
+
+All observation variables are unitless, and are normalized and bounded within [-1,1]
